@@ -11,7 +11,8 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: ThemeData(fontFamily:"Work Sans"),
       home: HomePage(),
     );
   }
@@ -48,7 +49,41 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ],
-          )
+          ),
+          Image.asset(
+                'assets/home_page_image.png',
+                scale: .5,
+          ),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              Color.fromRGBO(182,215,168,100),
+            ),
+            onPressed: null,
+            child: Row (
+              children: [
+                Icon(
+                  Icons.photo_camera,
+                ),
+                SizedBox(width: 8),
+                Text('Photo ID'),
+              ]
+            )
+          ),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              Color.fromRGBO(208,224,227,100),
+            ),
+            onPressed: null,
+            child: Row (
+              children: [
+                Icon(
+                  Icons.music_note,
+                ),
+                SizedBox(width: 8),
+                Text('Sound ID'),
+              ]
+            )
+          ),
         ],
       ),
       ),
