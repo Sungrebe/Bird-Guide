@@ -30,7 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  image_picker: 
+  camera:  
   tflite_flutter: ^0.10.3
 
   # The following adds the Cupertino Icons font to your application.
@@ -89,3 +89,11 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  fonts:
+    - family: Work Sans
+      fonts:
+        - asset: assets/Work_Sans/static/WorkSans-Regular.ttf
+        - asset: assets/Work_Sans/static/WorkSans-Bold.ttf
+          weight: 700
+        - asset: assets/Work_Sans/static/WorkSans-Italic.ttf
+          style: italic
