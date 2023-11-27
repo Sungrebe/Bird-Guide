@@ -34,10 +34,8 @@ class _HomePageState extends State<HomePage> {
           children: [
             Row(
               children: [
-                Image.asset(
-                  'assets/project_code_logo.png',
-                  scale: 1.5,
-                ),
+                Image.asset('assets/project_code_logo.png',
+                    scale: 1.5, key: const Key('project_code_logo_img')),
                 const SizedBox(width: 15),
                 const Text(
                   'Bird Guide',
@@ -50,42 +48,40 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 30),
             Image.asset(
-                  'assets/home_page_img.jpg',
-                  scale: .5,
+              'assets/home_page_img.jpg',
+              scale: .5,
             ),
             const SizedBox(height: 30),
             ElevatedButton(
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(const Color.fromRGBO(182,215,168,1)),
-              ),
-              onPressed: null,
-              child: const Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.photo_camera,
-                  ),
-                  SizedBox(width: 8),
-                  Text('Photo ID'),
-                ]
-              )
-            ),
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(
+                      const Color.fromRGBO(182, 215, 168, 1)),
+                ),
+                onPressed: null,
+                child: const Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.photo_camera,
+                      ),
+                      SizedBox(width: 8),
+                      Text('Photo ID'),
+                    ])),
             ElevatedButton(
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(const Color.fromRGBO(208,224,227,1)),
-              ),
-              onPressed: null,
-              child: const Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.music_note,
-                  ),
-                  SizedBox(width: 8),
-                  Text('Sound ID'),
-                ]
-              )
-            ),
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(
+                      const Color.fromRGBO(208, 224, 227, 1)),
+                ),
+                onPressed: null,
+                child: const Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.music_note,
+                      ),
+                      SizedBox(width: 8),
+                      Text('Sound ID'),
+                    ])),
           ],
         ),
       ),
