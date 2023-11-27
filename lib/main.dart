@@ -50,6 +50,7 @@ class _HomePageState extends State<HomePage> {
             Image.asset(
               'assets/home_page_img.jpg',
               scale: .5,
+              key: const Key('home_page_img'),
             ),
             const SizedBox(height: 30),
             ElevatedButton(

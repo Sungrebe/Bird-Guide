@@ -8,5 +8,8 @@ void main() {
 
     expect(find.byKey(const Key('project_code_logo_img')), findsOneWidget);
     expect(find.text('Bird Guide'), findsOneWidget);
+    expect(find.byKey(const Key('home_page_img')), findsOneWidget);
+    expect(find.text('Photo ID'), findsOneWidget);
+    expect(find.text('Sound ID'), findsOneWidget);
   });
 }
